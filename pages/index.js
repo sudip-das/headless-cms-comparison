@@ -1,15 +1,29 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import {Layout} from "../components/layouts/Layout";
+import {Container} from "react-bootstrap";
+// import Head from 'next/head'
+// import styles from '../styles/Home.module.css'
+// import Navigation from "../components/Navigation";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+      <Layout isHome={true}>
+          <Container>
+                <h1>This is Home.</h1>
+          </Container>
+      </Layout>
+    );
+}
+/*
+<div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
+
+        <Navigation />
+
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -61,5 +75,4 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
-}
+ */
